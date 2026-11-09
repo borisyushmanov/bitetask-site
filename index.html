@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>bitetask</title>
+<meta name="description" content="bitetask helps you free your head and move forward: capture an idea, break it into elementary actions, take them one small bite at a time. iPhone app, no server, no tracking.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="./">bitetask</a>
+  <nav aria-label="Main">
+    <a href="support/">Support</a>
+    <a href="privacy/">Privacy</a>
+    <a href="imprint/">Imprint</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <h1>Big tasks, tiny bites.</h1>
+    <p class="lead">bitetask helps you free your head and move forward. Capture an idea in seconds, break it into elementary actions, then take them one small bite at a time.</p>
+    <p class="lead">The point is not a list of things to do. It is turning huge problems into small bites you can do in one go.</p>
+    <a class="button" href="mailto:support@bitetask.com?subject=bitetask%20beta">Join the beta</a>
+    <p class="note">iPhone only. Free during the beta. Write to <a href="mailto:support@bitetask.com">support@bitetask.com</a> for a TestFlight invitation.</p>
+  </div>
+  <div class="phone" role="img" aria-label="Illustration of the bitetask home screen with five containers">
+    <div class="bar">bitetask</div>
+    <div class="field">You can capture an idea here - just start typing</div>
+    <div class="row"><span class="dot" style="background:var(--c-inbox)"></span><span class="name">INBOX</span><span class="n">4</span></div>
+    <div class="row"><span class="dot" style="background:var(--c-today)"></span><span class="name">TODAY</span><span class="n">3</span></div>
+    <div class="row"><span class="dot" style="background:var(--c-later)"></span><span class="name">LATER</span><span class="n">9</span></div>
+    <div class="row"><span class="dot" style="background:var(--c-follow)"></span><span class="name">FOLLOW UP</span><span class="n">2</span></div>
+    <div class="row"><span class="dot" style="background:var(--c-maybe)"></span><span class="name">MAYBE</span><span class="n">6</span></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>The idea</h2>
+  <p>Nobody launches a rocket by putting "Launch a rocket by lunch" on a to-do list. Every complex thing is made of a myriad of small, elementary actions.</p>
+  <p>bitetask gives you the environment and a few simple rules. You do the heavy lifting: you capture, you decide when, and you do one small thing after another.</p>
+</section>
+
+<section class="card">
+  <h2>How bitetask helps you</h2>
+  <div class="points three">
+    <div><h3>Empty your head</h3><p>Capture an idea in seconds, in one field, with no decisions at the moment of capture. Sorting comes later.</p></div>
+    <div><h3>One small bite</h3><p>Rephrase an idea as an elementary action you can do in one go. You feel what is small enough for you, and correct it when it is not. Five fixed containers match what people do with an issue: sort it, do it now, do it later, hand it over and check back, or park it.</p></div>
+    <div><h3>Your pace, your record</h3><p>No streaks, no nagging, no pressure. You choose what to do and what not to do. Every task keeps its full history, so you can see how it evolved.</p></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>The life of a task</h2>
+  <p>An idea lands in INBOX and is sorted into TODAY, LATER or MAYBE. It is acted on and can change along the way. It can be handed over to FOLLOW UP, come back as feedback, change again, and at some point be marked done. Nothing is overwritten; each step is added to the history of the task.</p>
+  <svg class="diagram" viewBox="0 0 360 470" role="img" aria-label="An idea goes to INBOX, is sorted into LATER, TODAY or MAYBE, can be handed over to FOLLOW UP and come back, and is finally marked done. Every step is kept in the history.">
+    <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs>
+    <rect class="box" x="115" y="12" width="130" height="40" rx="8"/><text x="180" y="37" text-anchor="middle">An idea</text>
+    <path class="line" d="M180 52V78" marker-end="url(#arr)"/>
+    <rect class="box" x="115" y="80" width="130" height="40" rx="8"/><text x="180" y="105" text-anchor="middle">INBOX</text>
+    <path class="line" d="M180 120V146M56 146H304M56 146V168M304 146V168M180 146V168" marker-end="url(#arr)"/>
+    <path class="line" d="M56 146V168" marker-end="url(#arr)"/><path class="line" d="M304 146V168" marker-end="url(#arr)"/>
+    <rect class="box" x="11" y="170" width="90" height="40" rx="8"/><text x="56" y="195" text-anchor="middle">LATER</text>
+    <rect class="box" x="135" y="170" width="90" height="40" rx="8"/><text x="180" y="195" text-anchor="middle">TODAY</text>
+    <rect class="box" x="259" y="170" width="90" height="40" rx="8"/><text x="304" y="195" text-anchor="middle">MAYBE</text>
+    <path class="line" d="M101 190H133" marker-end="url(#arr)"/>
+    <text class="quiet" x="56" y="228" text-anchor="middle">its day comes</text>
+    <path class="line" d="M160 210V266" marker-end="url(#arr)"/>
+    <path class="line" d="M200 266V212" marker-end="url(#arr)"/>
+    <text class="quiet" x="152" y="244" text-anchor="end">hand over</text>
+    <text class="quiet" x="208" y="244">feedback</text>
+    <rect class="box" x="125" y="268" width="110" height="40" rx="8"/><text x="180" y="293" text-anchor="middle">FOLLOW UP</text>
+    <rect class="done" x="24" y="338" width="312" height="44" rx="8"/><text x="180" y="365" text-anchor="middle" style="font-weight:500">DONE, from any container</text>
+    <rect class="band" x="24" y="404" width="312" height="48" rx="8"/><text x="180" y="425" text-anchor="middle">Every step, change and return</text><text x="180" y="443" text-anchor="middle">is kept in the history of the task</text>
+  </svg>
+</section>
+
+<section class="card">
+  <h2>Five containers</h2>
+  <p class="muted">Every task lives in exactly one container. The set is fixed, so you never have to design a system.</p>
+  <div class="containers">
+    <div class="item"><span class="dot" style="background:var(--c-inbox)"></span><span class="label">INBOX</span><span class="text">Fresh ideas, not yet sorted</span></div>
+    <div class="item"><span class="dot" style="background:var(--c-today)"></span><span class="label">TODAY</span><span class="text">Tasks to deal with today or this week</span></div>
+    <div class="item"><span class="dot" style="background:var(--c-later)"></span><span class="label">LATER</span><span class="text">Will belong to TODAY someday</span></div>
+    <div class="item"><span class="dot" style="background:var(--c-follow)"></span><span class="label">FOLLOW UP</span><span class="text">Delegated tasks; you check back</span></div>
+    <div class="item"><span class="dot" style="background:var(--c-maybe)"></span><span class="label">MAYBE</span><span class="text">Dreams and ideas parked for now</span></div>
+  </div>
+  <p class="muted small" style="margin-top:14px">Optionally add a person, a project, and an area: Work, Life or Support.</p>
+</section>
+
+<section class="card">
+  <h2>What the app is</h2>
+  <div class="points three">
+    <div><h3>Yours alone</h3><p>No server, no tracking, data stays on your iPhone. There is no account and no sign-up.</p></div>
+    <div><h3>Always in your hands</h3><p>Export a backup or a spreadsheet at any time and import it back. Moving to a new iPhone takes one file.</p></div>
+    <div><h3>Simple core, optional extras</h3><p>bitetask works fully on its own. Future features such as dictation or AI will be optional and can be switched off.</p></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Pricing</h2>
+  <p>Free during the beta. After launch: 2 weeks free, then €4.99 per month. Cancel any time in your Apple subscription settings.</p>
+</section>
+
+<section class="card">
+  <h2>Questions</h2>
+  <dl>
+    <div><dt>Is bitetask on Android?</dt><dd>Not now. It is built for iPhone only.</dd></div>
+    <div><dt>Do I need an account?</dt><dd>No.</dd></div>
+    <div><dt>Where is my data?</dt><dd>On your iPhone. There is no server.</dd></div>
+    <div><dt>Can I get my tasks out?</dt><dd>Yes. Export a backup file or a CSV spreadsheet in Settings, and import them back.</dd></div>
+    <div><dt>How do I join the beta?</dt><dd>Write to <a href="mailto:support@bitetask.com">support@bitetask.com</a> and you will get a TestFlight invitation.</dd></div>
+  </dl>
+</section>
+</main>
+<footer>
+  <span>bitetask</span>
+  <a href="support/">Support</a>
+  <a href="privacy/">Privacy</a>
+  <a href="imprint/">Imprint</a>
+  <a href="mailto:support@bitetask.com">support@bitetask.com</a>
+</footer>
+</div>
+</body>
+</html>

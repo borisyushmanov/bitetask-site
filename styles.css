@@ -86,8 +86,13 @@ p:last-child { margin-bottom: 0; }
 .phone { width: min(100%, 270px); margin: 0 auto; background: var(--bg); border: 7px solid var(--fg); border-radius: 38px; padding: 16px 12px 14px; display: grid; gap: 8px; }
 .phone .bar { font-size: 17px; font-weight: 500; padding: 0 6px 2px; }
 .phone .field { background: var(--card); border-radius: 12px; padding: 10px 12px; font-size: 12.5px; line-height: 1.35; color: var(--muted); }
-.phone .row { display: flex; align-items: center; gap: 10px; background: var(--card); border-radius: 14px; padding: 8px 10px; }
-.phone .dot { flex: none; width: 30px; height: 30px; border-radius: 50%; }
+.phone .block { background: var(--card); border-radius: 12px; overflow: hidden; }
+.phone .row { display: flex; align-items: center; gap: 10px; padding: 7px 10px; }
+.phone .row + .row { border-top: 1px solid var(--line); }
+.phone .dot { flex: none; width: 24px; height: 24px; border-radius: 6px; }
+.phone .tiles { display: grid; grid-template-columns: repeat(3, 1fr); }
+.phone .tile { padding: 9px 4px; font-size: 12px; text-align: center; }
+.phone .tile + .tile { border-left: 1px solid var(--line); }
 .phone .name { font-size: 13px; font-weight: 500; flex: 1; }
 .phone .n { font-size: 13px; color: var(--muted); }
 
